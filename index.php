@@ -2,7 +2,7 @@
 /*
 * This is a examples of how to using DataSecurityPHP.
 */
-require 'classes/DataSecurityPHP.class.php'; #include DataSecurityPHP class.
+require 'DataSecurityPHP.class.php'; #include DataSecurityPHP class.
 $security = new DataSecurityPHP(); # Creating an instance of the DataSecurityPHP class
 $str = 'Hello, world!'; #Simple string
 $binary_str = '1001000 1100101 1101100 1101100 1101111 101100 100000 1110111 1101111 1110010 1101100 1100100 100001'; #Binary string
