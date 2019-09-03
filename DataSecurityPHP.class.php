@@ -85,7 +85,7 @@ class DataSecurityPHP
 	public function decrypt($hash, $private_key, $unbinary = null) 
 	{
 		$get_data = base64_decode($hash);
-		$get_string = ($unbinary !== null) ? $this->unbinary($get_data) :  $get_data;
+		$get_string = ($unbinary !== null) ? base64_decode($this->unbinary($hash)) :  $get_data;
 		openssl_private_decrypt($get_string, $data, $private_key);
 		return $data;
 	}
